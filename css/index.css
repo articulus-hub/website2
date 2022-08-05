@@ -120,6 +120,12 @@ body {
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
 }
+.section-1 > video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* object-position:10% bottom; */
+}
 .section-1 > img {
   width: 100%;
   height: 100%;
@@ -135,14 +141,14 @@ body {
   top: 0;
 }
 .section-1 .overlay {
-  min-height: 180px;
+  min-height: 140px;
   position: absolute;
   bottom: 0px;
-  width: 40%;
+  width: 33%;
   right: 0;
   color: #15234c;
   text-align: right;
-  padding: 15px;
+  padding: 12px;
   padding-left: 0;
   background-color: transparent;
   backdrop-filter: blur(5px);
@@ -158,16 +164,16 @@ body {
   height: 100%;
   transform-origin: 100% 0;
   transform: skew(-45deg);
-  background-image: linear-gradient(to bottom, #cbe1ff80 50%, #cbe1ff 85%);
-  /* background-color: #cbe1ffa0; */
+  background-image: linear-gradient(to bottom, #cbe1ff00 30%, #cbe1ff80 50%,#cbe1ffa0 80%);
+  background-color: #cbe1ffa0;
   backdrop-filter: blur(5px);
   z-index: -1;
 }
 .section-1 .overlay h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 .section-1 .overlay h3 {
-  font-size: 2em;
+  font-size: 1.5em;
   position: relative;
 }
 #typing::after {
@@ -359,7 +365,7 @@ body {
   height: auto;
   overflow-x: auto;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   padding: 20px;
   margin-bottom: 25px;
   font-family: "Montserrat", sans-serif;
@@ -422,6 +428,7 @@ body {
 .team .member img {
   width: 100%;
   height: auto;
+  object-fit: contain;
 }
 .team .member .member-info {
   padding: 10px;
